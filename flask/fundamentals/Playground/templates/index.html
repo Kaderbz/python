@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 10px;
+            border: 2px solid blue;
+            border-radius: 10px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: {{ color }};
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome</h2>
+    <div class="wrapper">
+        {% for _ in range(num_boxes) %}
+            <div class="box"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>

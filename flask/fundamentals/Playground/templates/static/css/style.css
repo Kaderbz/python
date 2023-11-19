@@ -1,0 +1,15 @@
+.wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: {{ color }};
+  margin: 10px;
+}
