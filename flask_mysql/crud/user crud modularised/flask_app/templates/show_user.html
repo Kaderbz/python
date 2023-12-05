@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>User</title>
+    <style>
+        body {
+            /* Add background properties here */
+            background-image: url('https://img.freepik.com/vecteurs-libre/fond-ciel-pastel-aquarelle-peint-main_23-2148902771.jpg?w=1380&t=st=1701430014~exp=1701430614~hmac=abe4706856c29020d211b02b1b4621b1c3a8e0c3d4fc0460bcbbf0316e9fbf99'); /* Replace with your image file path */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+        }
+    </style>
+
+</head>
+<body>
+    <h2 class="text-center">User {{user.id}}</h2>
+    <p>Full Name {{user.full_name()}}</p>
+    <p>Email: {{user.email}}</p>
+    <p>Created ON: {{user.created_at.strftime("%b %d %Y")}}</p>
+    <p>Last Updated: {{  user.updated_at.strftime("%b %d %Y")}}</p>
+</body>
+</html>
